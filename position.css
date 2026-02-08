@@ -1,0 +1,783 @@
+*{
+    margin: 1px;
+    padding:1px;
+}
+html{
+    background-image: url('home.png');
+    background-size: 200% 200%;
+    background-attachment: fixed;
+    background-origin: border-box;
+    color:white;
+    animation: animibg 200s ease infinite;
+
+}
+body{
+    background: rgb(78, 72, 72,0.1);
+}
+
+@keyframes animibg {
+    0%{
+        background-position: 0%;
+    }    
+    50%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0%;
+    }
+}
+
+.nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.bar{
+    height: 3px;
+    width:100%;
+    background-color:white;
+}
+.title{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 8px;
+}
+.loom ul{
+    display: flex;
+}
+.nav ul li{
+list-style: none;
+padding:  10px;
+}
+
+.nav li a{
+        padding:20px;
+        text-decoration: none;
+        color:white;
+}
+.nav li a:hover{
+    color: rgb(8, 130, 236);
+    background: rgba(46, 114, 177, 0.2);
+    border-radius: 70%;
+    transition: all 1s ease-in-out;
+    font-size: 15px;
+}
+.btn2{
+    position: absolute;
+    top:16px;
+    right:16px;
+    width:25px;
+    height:23px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-top:-13%;
+    
+}
+
+.name{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:50px;
+    margin-left: 50px;
+    color:greenyellow;
+    animation:typing 14s infinite;
+    width:0ch;
+    overflow: hidden;
+}
+@keyframes typing {
+    0%{
+        width:0ch;
+    }
+    50%{
+        width:10ch;
+    }
+}
+.name:hover{
+    color:white;
+}
+
+.logo{
+    position: relative;
+    height:220px;
+    margin-top: 180px;
+    margin-left: 700px;
+    border: 2px solid rgb(255, 124, 205);
+    border-radius: 50%;
+    transition-property: transform;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    border-bottom: none;
+    transition: all 1s ease-in-out;
+}
+
+.logo:hover{
+   
+    height:230px;
+    margin-top: 170px;
+    margin-left: 700px;
+    border: 2px solid rgb(72, 34, 241);
+    border-bottom: none;
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+}
+.logo:active{
+   
+    height:230px;
+    margin-top: 130px;
+    margin-left: 580px;
+    border: 2px solid rgb(51, 241, 34);
+    border-bottom: none;
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+}
+
+.logomini{
+        position: relative;
+        margin-top: 130px;
+        margin-left: -80px;
+        display: none;
+}
+.about1{
+    animation: typing 4s 1;
+    overflow: hidden;
+    margin-left: 50px;
+    width: 520px;
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+
+.btn{
+    color: rgb(8, 130, 236);
+    background: rgba(46, 114, 177, 0.2);
+    border-radius: 70%;
+    padding: 20px;
+    margin-left:45px ;
+    transition: all 1s ease-in-out;
+}
+.btn:hover{
+    font-size: 15px;
+    background: rgb(75, 228, 177,0.8);
+    color:black;
+    transition: all 0.4s ease-in-out;
+}
+
+.box{
+    margin-top:200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    transition:all 3s ease-in 0s;
+    padding-left:80px;
+    padding-right: 200px;
+    overflow: hidden;
+}
+.box .tech{
+    position:  relative;
+    margin-left:10px;
+}
+.boxs{
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    overflow: hidden;
+}
+.box1{
+    background: rgb(83, 81, 81,0.1);
+    border: 1px solid whitesmoke;
+    border-radius: 10%;
+    color:whitesmoke;
+    width:300px;
+    height:250px;
+    padding: 15px;
+    text-align: justify;
+    line-height: 25px;
+    margin-top: 50px;
+  transition:all 1s ease-in 0s;
+  
+    box-shadow: 0 4px 18px 0 rgb(149, 173, 8);
+}
+
+.box1:hover{
+    background: rgba(73, 72, 72, 0.3);
+    width: 310px;
+     border: 1px solid rgb(35, 253, 64);
+     
+    height: 260px;
+    color:rgb(222, 235, 46);
+    
+    
+}
+
+.box2{
+    background: rgb(83, 81, 81,0.1);
+    border: 1px solid whitesmoke;
+    border-radius: 10%;
+    
+    box-shadow: 0 4px 18px 0 rgb(255, 166, 33);
+  transition:all 0.5s ease-in 0s;
+    color:rgb(238, 197, 197);
+        width:300px;
+    height:250px;
+    padding: 15px;
+    margin-top: 50px;
+    text-align: justify;
+}
+.box2:hover{
+    background: rgba(24, 24, 24, 0.9);
+    
+     border: 1px solid rgb(194, 250, 63);
+     width: 310px;
+     
+    color:rgb(46, 223, 235);
+    height: 260px;
+    word-spacing: 1.5px;
+}
+
+.lbox{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.spinner{
+    width:50px;
+    height: 50px;
+    border: 5px solid rgb(23, 248, 34);
+    border-top: green;
+    border-radius: 50%;
+    justify-content: center;
+    transition-property: transform;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes rotate {
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.box3{
+    background: rgb(83, 81, 81,0.1);
+    border: 1px solid whitesmoke;
+    border-radius: 10%;
+  transition:all 0.5s ease-in 0s;
+    color:rgb(238, 197, 197);
+    
+    box-shadow: 0 4px 18px 0 rgb(235, 52, 82);
+    width:300px;
+    height:250px;
+    padding: 15px;
+    text-align: justify;
+}
+
+.box3:hover{
+    background: rgba(73, 72, 72, 0.3);
+     border: 1px solid rgb(194, 250, 63);
+     
+    color:rgb(46, 223, 235);
+     width: 310px;
+    height: 260px;
+}
+.box4{
+    background: rgb(83, 81, 81,0.1);
+    border: 1px solid whitesmoke;
+    border-radius: 10%;
+    color:whitesmoke;
+    width:300px;
+    height:250px;
+    
+    box-shadow: 0 4px 18px 0 rgb(52, 146, 235);
+  transition:all 0.5s ease-in 0s;
+    padding: 15px;
+    text-align: justify;
+}
+.box4:hover{
+    background: rgba(22, 22, 22, 0.8);
+     border: 1px solid rgb(35, 253, 64);
+     
+    color:rgb(222, 235, 46);
+     width: 310px;
+    height: 260px;
+}
+
+.edu{
+    margin-top: 100px;
+    margin-left:60px;
+    color:aqua;
+}
+
+.cbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: space;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.card{
+    width:200px;
+    height:250px;
+    border-radius: 20px;
+    background: rgb(107, 106, 101,0.1);
+    position: relative;
+    padding:1.8rem;
+    text-align: center;
+    border:2px solid rgb(255, 126, 66);
+    transition: 1s ease-out;
+    overflow: visible;
+}
+.c1{
+    color:black;
+    height:100%;
+    gap:0.5em;
+    display: grid;
+    place-content: center;
+}
+.c1button{
+    transform:translate(-50%,125%);
+    width:30%;
+    border-radius: 1rem;
+    background-color: rgb(66, 243, 134);
+    color:rgb(0, 0, 0);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    position:absolute;
+    left:50%;
+    bottom:0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+.c1body{
+    color:rgb(255, 120, 66);
+}
+.card:hover .c1body{
+    color:rgb(67, 230, 115);
+}
+.c1title{
+    color:rgb(255, 108, 64);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.card:hover .c1title{
+    color:green;
+}
+.card:hover{
+    border-color: rgb(28, 255, 130);
+    box-shadow: 0 4px 18px 0 rgb(90, 87, 236);
+    background: rgb(54, 52, 52,0.7);
+}
+.card:hover .c1button{
+    transform: translate(-50%,50%);
+    text-align: center;
+    opacity: 1;
+}
+.card strong:hover{
+    opacity:1;
+}
+.card2{
+    width:200px;
+    height:250px;
+    border-radius: 20px;
+    background: rgb(107, 106, 101,0.1);
+    position: relative;
+    padding:1.8rem;
+    border:2px solid rgb(227, 255, 66);
+    transition: 0.5s ease-out;
+    overflow: visible;
+}
+
+.c2{
+    color:black;
+    height:100%;
+    gap:0.5em;
+    display: grid;
+    place-content: center;
+}
+.c2button{
+    transform:translate(-50%,125%);
+    width:30%;
+    border-radius: 1rem;
+    background-color: rgb(66, 243, 134);
+    color:rgb(0, 0, 0);
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    position:absolute;
+    left:50%;
+    bottom:0;
+    opacity: 0;
+    transition: 1s ease-out;
+}
+
+.c2body{
+    color:rgb(227, 255, 66);
+}
+.card2:hover .c2body{
+    color:rgb(67, 230, 115);
+}
+.c2title{
+    color:rgb(227, 255, 66);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.card2:hover .c2title{
+    color:green;
+}
+.card2:hover{
+    border-color: rgb(28, 255, 130);
+    background: rgb(54, 52, 52,0.7);
+    box-shadow: 0 4px 18px 0 rgb(248, 135, 69);
+}
+.card2:hover .c2button{
+    transform: translate(-50%,50%);
+    text-align: center;
+    opacity: 1;
+}
+.card2 strong:hover{
+    opacity:1;
+}
+
+.card3{
+    width:200px;
+    text-align: center;
+    height:250px;
+    border-radius: 20px;
+    background: rgb(107, 106, 101,0.1);
+    position: relative;
+    padding:1.8rem;
+    border:2px solid rgb(81, 184, 243);
+    transition: 1s ease-out;
+    overflow: visible;
+}
+
+.card3:hover .c1button{
+    transform: translate(-50%,50%);
+    text-align: center;
+    opacity: 1;
+}
+
+.c3body{
+    color:rgb(66, 201, 255);
+}
+.card3:hover .c3body{
+    color:rgb(67, 230, 115);
+}
+.c3title{
+    color:skyblue;
+}
+.card3:hover .c3body{
+    color:rgb(67, 230, 115);
+}
+.card3:hover .c3title{
+    color:rgb(80, 230, 80);
+}
+
+.card3:hover{
+    border-color: rgb(28, 255, 130);
+    background: rgb(54, 52, 52,0.7);
+    box-shadow: 0 4px 18px 0 rgb(214, 236, 87);
+}
+
+.probox{
+    height:300px;
+    width:250px;
+    display: flex;
+}
+.proboxcon{
+    height:300px;
+    width:250px;
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-right: 300px;
+}
+.pbbox, .pfbox{
+    position: absolute;
+        height:300px;
+    width:250px;
+    padding : 30px;
+    color:black;
+    transition: all 1s ease-in-out;
+}
+.proboxcon:hover .pbbox{
+    opacity: 0;
+}
+.proboxcon:hover .pfbox{
+    opacity: 1;
+}
+.pbbox{
+    background-color: rgba(129, 252, 72, 0.1);
+    border-radius: 30px;
+    color:aliceblue;
+    display: flex;
+    padding-top: 60px;
+    flex-direction: column;
+    gap:10px;
+    box-shadow: 0 16px 18px 0 rgb(194, 247, 49);
+}
+.pfbox{
+    opacity: 0;
+    line-height: 25px;
+    text-align: justify;
+    background-color: rgba(132, 136, 135, 0.4);
+    color:chartreuse;
+        border-radius: 30px;
+        font-size: 16px;
+    box-shadow: 0 16px 18px 0 orangered;
+
+}
+.pbbox ul li{
+    list-style: none;
+    padding: 20px;
+    padding-left: 40px;
+}
+
+
+@media(max-width:600px){
+    .btn2{
+        display: flex;
+    }
+    .loom{
+        display: flex;
+    }
+    .nav{
+        flex-direction: column;
+    }
+    .loom.active{
+        display: flex;
+    }
+    .logo{
+        display: none;
+    }
+    .logomini{
+        display: inline-block;       
+    }
+    .main{
+        margin-top: -10px;
+        z-index: 2;
+        width:500px;
+    }
+    .about1{
+        width:400px;
+    }
+    
+.box{
+    margin-top:200px;
+    display: flex;
+    flex-direction: column;
+}
+.box3{
+    margin-top: 20px;
+}
+
+.box4{
+    margin-top: 70px;
+}
+.cbox{
+    flex-direction: column;
+    align-items: center;
+}
+.card{
+    margin-bottom:120px;
+}
+.card2{
+    margin-bottom:120px;
+}
+.card3{
+    margin-bottom:0px;
+}
+.probox{
+    flex-direction: column;
+    
+}
+.proboxcon{
+    padding-top: 300px;
+}
+.hobbies{
+    position: absolute;
+    height: 2700px;
+    margin-left: 40px;
+}
+.form{
+    position: absolute;
+    height: 4500px;
+    margin-left: 70px;
+}
+.follow{
+    opacity: 0;
+}
+}
+
+.hobbies{
+    margin-top: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lists{
+    display: flex;
+    flex-direction: column;
+    height:200px;
+    width:400px;
+}
+.photoshop{
+    margin-top: 100px;
+    padding: 15px;
+    height: 200px;
+    line-height: 25px;
+    border: 2px solid rgb(39, 255, 75);
+    transition: all 1s ease-in-out;
+}
+
+.photo{
+    margin-top: 50px;
+    line-height: 25px;
+    padding: 15px;
+    border: 2px solid rgb(252, 23, 233);
+    height: 200px;
+    transition: all 1s ease-in-out;
+}
+.chess{
+    margin-top: 100px;
+    line-height: 25px;
+    padding: 15px;
+    border: 2px solid rgb(64, 217, 255);
+    height: 200px;
+    transition: all 1s ease-in-out;
+}
+
+.photoshop:hover{
+    padding: 18px;
+    height: 220px;
+    
+    background-color: rgb(107, 99, 99,0.2);
+    border: 2px solid rgb(255, 255, 255);
+    color:yellow;
+}
+
+.photo:hover{
+    padding: 18px;
+    height: 220px;
+    border: 2px solid rgb(139, 167, 148);
+    color:yellow;
+    background-color: rgb(107, 99, 99,0.2);
+}
+.chess:hover{
+    padding: 18px;
+    background-color: rgb(107, 99, 99,0.2);
+    height: 220px;
+    border: 2px solid rgb(0, 255, 213);
+    color:yellow;
+}
+.form3{
+    display: flex;
+    margin-top: 500px;
+    justify-content: space-between;
+    margin-right: 200px;
+}
+.follow{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-left: 140px;
+    flex-direction: column;
+}
+.follow a{
+    border: 1px solid pink;
+    border-radius: 50px;
+    padding:15px 18px;
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
+.follow a:hover{
+    padding: 18px 20px;
+}
+a{
+    text-decoration: none;
+    color:rgb(255, 0, 242);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.email{
+    padding:15px;
+    width:300px;
+    border-radius: 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    margin: 20px;
+    color:rgb(91, 195, 236);
+    transition: all 1s ease-in-out;
+    box-shadow: 0 8px 12px 0px rebeccapurple;
+}
+.email:focus{
+    border: 1px solid rgb(0, 225, 255);
+    padding: 20px;
+}
+.feedback{
+    padding:15px;
+    width:300px;
+    transition: all 1s ease-in-out;
+    border-radius: 10px;
+    background: transparent;
+    outline: none;
+    height:100px;
+    width:300px;
+    padding-right: 40px;
+    border: none;
+    margin: 20px;
+    color:rgb(91, 195, 236);
+    box-shadow: 0 8px 12px 0px rebeccapurple;
+}
+.feedback:focus{
+    border: 1px solid rgb(0, 225, 255);
+       padding: 20px;
+}
+input::placeholder{
+    color:rgb(214, 122, 214,1.5);
+}
+.btn5{
+    padding:15px;
+    background: transparent;
+    color:rgb(200, 255, 47);
+    margin-top: 20px;
+    border-radius: 30px;
+    transition: all 1s ease-in-out;
+}
+.btn5:hover{
+    padding:20px;
+    border: 1px solid rgb(0, 225, 255);
+}
+p:hover{
+    color:aquamarine;
+}
+
+a:hover{
+    color:aqua;
+}
+a:link{
+    font-style: none;
+}
+a:active{
+    color:aquamarine;
+    background: rgb(240, 149, 149) 0.5;
+}
