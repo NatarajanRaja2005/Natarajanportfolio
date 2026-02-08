@@ -3,7 +3,7 @@
     padding:1px;
 }
 html{
-    background-image: url("./images/home.png");
+    background-image: url("home.png");
     background-size: 200% 200%;
     background-attachment: fixed;
     background-origin: border-box;
@@ -782,3 +782,4 @@ a:active{
     background: rgb(240, 149, 149) 0.5;
 
 }
+
