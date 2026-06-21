@@ -546,80 +546,108 @@ padding:  10px;
     padding-left: 40px;
 }
 
-
-@media(max-width:600px){
-    .btn2{
-        display: flex;
-    }
-    .loom{
-        display: flex;
-    }
-    .nav{
+@media (max-width: 768px) {
+    .nav {
         flex-direction: column;
+        align-items: flex-start;
     }
-    .loom.active{
+    
+    .btn2 {
         display: flex;
     }
-    .logo{
+    
+    .loom {
+        display: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .loom.active {
+        display: flex;
+    }
+    
+    .loom ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .loom ul li {
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .main {
+        margin-top: 50px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .name {
+        margin-left: 0;
+        font-size: 35px;
+        animation: none;
+        width: auto;
+    }
+
+    .about1 {
+        width: 90%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .btn {
+        margin-left: 0;
+    }
+
+    .logo {
         display: none;
     }
-    .logomini{
-        display: inline-block;       
-    }
-    .main{
-        margin-top: -10px;
-        z-index: 2;
-        width:500px;
-    }
-    .about1{
-        width:400px;
-    }
-    
-.box{
-    margin-top:200px;
-    display: flex;
-    flex-direction: column;
-}
-.box3{
-    margin-top: 20px;
-}
 
-.box4{
-    margin-top: 70px;
-}
-.cbox{
-    flex-direction: column;
-    align-items: center;
-}
-.card{
-    margin-bottom:120px;
-}
-.card2{
-    margin-bottom:120px;
-}
-.card3{
-    margin-bottom:0px;
-}
-.probox{
-    flex-direction: column;
-    
-}
-.proboxcon{
-    padding-top: 300px;
-}
-.hobbies{
-    position: absolute;
-    height: 2700px;
-    margin-left: 40px;
-}
-.form{
-    position: absolute;
-    height: 4500px;
-    margin-left: 70px;
-}
-.follow{
-    opacity: 0;
-}
+    .logomini {
+        display: block;
+        margin: 20px auto;
+    }
+
+    .box, .boxs {
+        padding: 0 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box1, .box2, .box3, .box4 {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .cbox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proboxcon {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .lists {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photoshop, .photo, .chess {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .form3 {
+        flex-direction: column;
+        padding: 0 20px;
+        align-items: center;
+    }
+
+    .form {
+        width: 100%;
+    }
 }
 
 .hobbies{
